@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Listing</title>
+    <script>
+        function listCars() {
+            const cars = ["toyota", "honda", "mazda", "mitsubishi", "tesla", "lexus"];
+
+            console.log("First item:", cars[0]);
+            console.log("Last item:", cars[cars.length - 1]);
+
+            cars.push("mercedes-benz");
+            console.log("Updated array after adding mercedes-benz:", cars);
+
+            console.log("All items in the array:");
+            for (let i = 0; i < cars.length; i++) {
+                console.log(cars[i]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Cars Listing Challenge</h1>
+    <p>Open the browser's console to see the output.</p>
+    <button onclick="listCars()">Run Cars Listing</button>
+</body>
+</html>
